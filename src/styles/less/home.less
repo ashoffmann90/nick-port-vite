@@ -1,0 +1,165 @@
+.player-wrapper-home {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    .overlay-box {
+        .flex(column, nowrap, center, flex-start);
+        position: absolute;
+        top: 10%;
+        left: 6%;
+        width: 50%;
+        height: auto;
+        z-index: 1;
+
+        // @media only screen and (max-width: 900px) {
+        //     top: 10%;
+        //     left: 6%;
+        // }
+
+        h2 {
+            font-size: 250%;
+            margin: 3% 5%;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 125%;
+            }
+        }
+
+        .reel-button {
+            margin: 0 5%;
+            width: 20%;
+            min-width: 100px;
+            max-width: 115px;
+            height: 20%;
+            min-height: 40px;
+            background-color: white;
+            border: none;
+            font-family: @header-font;
+            font-weight: 600;
+            font-size: 175%;
+
+            @media only screen and (max-width: 600px) {
+                width: 20%;
+                min-width: 63px;
+                max-width: 130px;
+                height: 15%;
+                min-height: 22px;
+                font-size: 75%;
+            }
+        }
+    }
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+    }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8%;
+
+    .me {
+        .flex(row, nowrap, space-between, center);
+        color: @font-color;
+        padding-bottom: 5%;
+        border-bottom: 3px solid @border-color;
+
+        @media only screen and (max-width: 1300px) {
+            .flex(column-reverse, nowrap, center, center);
+        }
+
+        .self-portrait {
+            margin-top: 7.5%;
+            width: 45%;
+            height: auto;
+            
+            @media only screen and (max-width: 1300px) {
+                margin: 5% 0;
+                width: 90%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+
+        .bio {
+            .flex(direction, wrap, space-between, align);
+            width: 45%;
+
+            @media only screen and (max-width: 1300px) {
+                margin: 1% 0 0 0;
+                width: 100%;
+            }
+
+            h2 {
+                margin: 5% auto 6% auto;
+            }
+
+            .bio-text-div {
+
+                p {
+                    align-self: flex-start;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+    }
+    .gear {
+        margin: 4% auto;
+        width: 75%;
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2%;
+
+            @media only screen and (max-width: 1000px) {
+                margin-top: 4%;
+                margin-bottom: 4%;
+            }
+        }
+        .gear-list-flex {
+            .flex(row, nowrap, center, center);
+
+            @media only screen and (max-width: 1000px) {
+                .flex(column, nowrap, center, center);
+            }
+
+            ul {
+                .flex(column, wrap, space-between, center);
+                width: 100%;
+                min-width: 370px;
+                height: 225px;
+
+                @media only screen and (max-width: 1000px) {
+                    .flex(column, nowrap, space-between, flex-start);
+                    height: 100%;
+                }
+
+                li {
+                    margin: 1% 0;
+                    font-size: 110%;
+                    line-height: 1.5rem;
+
+                    @media only screen and (max-width: 1000px) {
+                        line-height: 2rem;
+                        font-size: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
