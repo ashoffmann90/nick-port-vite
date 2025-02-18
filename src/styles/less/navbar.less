@@ -1,0 +1,68 @@
+.nav-div {
+    margin: 0 8vw;
+    min-height: 15vh;
+    padding-top: 20px;
+
+
+    header {
+        min-height: 10vh;
+        .flex(@justify: space-between, @align: baseline);
+
+        @media only screen and (max-width: 800px) {
+            .flex(column, nowrap, space-around, center);
+        }
+
+        @media only screen and (max-width: 480px) {
+            .flex(row, nowrap, space-around, center);
+        }
+
+        .name-title-wrapper {
+            width: 30vw;
+            margin-right: 12vw;
+
+            @media only screen and (max-width: 800px) {
+                width: 75%;
+                max-width: 275px;
+                margin: 0 auto;
+            }
+
+            img {
+                object-fit: scale-down;
+                width: 100%;
+                height: auto;
+                min-width: 200px;
+                min-height: 115px;
+                margin: 0 auto;
+            }
+        }
+        nav {
+            width: 65%;
+            .flex(row, nowrap, space-between, flex-end);
+            position: relative;
+            bottom: 12px;
+
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+            }
+
+            @media only screen and (max-width: 480px) {
+                .flex(column, nowrap, space-evenly, center);
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            a {
+                letter-spacing: 0.1rem;
+                font-size: 1.5rem;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: white;
+                }
+            }
+        }
+    }
+}

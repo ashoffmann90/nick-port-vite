@@ -1,0 +1,47 @@
+.footer-container {
+    border-top: 1px solid @border-color;
+    .flex(row, nowrap, space-evenly, center);
+    position: static;
+    width: 100%;
+    min-height: 13vh;
+    bottom: 0;
+    padding-top: 5px;
+
+    .footer-sections {
+        .flex(column, nowrap, center, center);
+        width: 50%;
+        margin: 3px 0 0 0;
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1vh;
+        }
+
+        .social-icons {
+            width: 100%;
+            .flex(row, nowrap, center, center);
+
+            a {
+                .flex(column, nowrap, center, center);
+                text-decoration: none;
+
+                .soc-icon {
+                    max-width: 50%;
+
+                    img {
+                        object-fit: scale-down;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
