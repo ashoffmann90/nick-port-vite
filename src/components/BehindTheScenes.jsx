@@ -56,6 +56,7 @@ function BehindTheScenes() {
       maxWidth: '900px',
       aspectRatio: '3 / 2',
       margin: '0 auto',
+      minHeight: '500px',
     },
   }
 
@@ -95,7 +96,7 @@ function BehindTheScenes() {
           slides={imgArray}
           inline={inline}
           slideshow={{ autoplay: true, delay: 5000 }}
-          thumbnails={{ position: 'bottom', hidden: false, showToggle: true }}
+          thumbnails={{ position: 'bottom', hidden: false, showToggle: true, }}
           plugins={[Inline, Fullscreen, Slideshow, Thumbnails, Zoom]}
         />
       </div>
