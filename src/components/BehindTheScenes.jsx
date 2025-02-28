@@ -50,106 +50,13 @@ function BehindTheScenes() {
     { src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/R4030F08.jpg' },
   ]
 
-  const images = [
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/001.jpg',
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03760.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/002.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03870.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/003.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03883.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/005.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC03496.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/006.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC03567.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/007.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04021.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/008.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04065.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/009.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04180.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/010.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04185.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/011.JPG',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_0435.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6486.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_9798.jpg',
-    },
-    {
-      original: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/VLB+Shoot.jpg',
-    },
-    {
-      original:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpg',
-    },
-    {
-      original:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/R4030F08.jpg',
-
-      thumbnail:
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/R4030F08.jpg',
-    },
-  ]
-
   const inline = {
     style: {
       width: '100%',
       maxWidth: '900px',
       aspectRatio: '3 / 2',
       margin: '0 auto',
+      minHeight: '500px',
     },
   }
 
@@ -189,7 +96,7 @@ function BehindTheScenes() {
           slides={imgArray}
           inline={inline}
           slideshow={{ autoplay: true, delay: 5000 }}
-          thumbnails={{ position: 'bottom', hidden: false, showToggle: true }}
+          thumbnails={{ position: 'bottom', hidden: false, showToggle: true, }}
           plugins={[Inline, Fullscreen, Slideshow, Thumbnails, Zoom]}
         />
       </div>
