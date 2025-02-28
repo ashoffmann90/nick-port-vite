@@ -24,10 +24,6 @@ function Videos() {
             url: 'https://youtu.be/xdzwEaIKo9M',
         },
         {
-            artist: 'Muni Long',
-            url: 'https://youtu.be/szuAq2v9TSI',
-        },
-        {
             artist: 'Woosung',
             url: 'https://youtu.be/3YFZyOpF7tU',
         },
